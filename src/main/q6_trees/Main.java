@@ -3,18 +3,6 @@ class Main {
     System.out.println("Hello world!");
   }
 
-  public static Queue<Integer> getCopy(Queue<Integer> q){
-    Queue<Integer> retQ = new Queue <Integer>();
-    Queue<Integer> backup = new Queue <Integer>();
-    while (!q.isEmpty()){
-      backup.insert(q.head());
-      retQ.insert(q.remove());
-    }
-    while (!backup.isEmpty())
-      q.insert(backup.remove());    
-    return retQ;
-  }
-
   public static boolean ex6(BinNode<Node<Integer>> tree){
     if (tree == null)
       return true;
