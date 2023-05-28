@@ -34,6 +34,12 @@ public class Main {
 	/*
 	 * It is given that the number of speakers is even: |lstS| % 2 == 0 
 	 * So every time we take out 2 speakers from the list.
+	 *
+	 * Complexity: O(m*n) for <m,n> sizes of speakers and demonstrations.
+	 * because for each speaker, we use getMaxMin which is O(n).
+	 *
+	 * Or we can say O(n^2)
+	 * If we say n is the maximum of speaker and demonstration lists.
 	 */
 	public static void addSp(Node<Demonstration> lstD, Node<Speaker> lstS) {
 		Node<Speaker> p = lstS, bestS, lastS;
