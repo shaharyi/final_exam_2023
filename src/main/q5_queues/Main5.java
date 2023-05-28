@@ -14,6 +14,7 @@ public class Main5 {
 
 	/*
 	 * Complexity: O(n) where n is the size of q1.
+	 * Note q1, q2 are equal in length.
 	 * Because we scan q1 and q2 only once, and O(2n) = O(n).
 	 * We visit every cell of the input just once.
 	 */
