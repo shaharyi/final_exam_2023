@@ -12,6 +12,11 @@ public class Main5 {
 		    return retQ;
 		  }
 
+	/*
+	 * Complexity: O(n) where n is the size of q1.
+	 * Because we scan q1 and q2 only once, and O(2n) = O(n).
+	 * We visit every cell of the input just once.
+	 */
 	public static boolean ex5A(Queue<Integer> q1, Queue<Integer> q2, int n) {
 		
 		Queue<Integer> q = new Queue<Integer>();
