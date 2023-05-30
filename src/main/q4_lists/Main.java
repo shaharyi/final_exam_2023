@@ -49,8 +49,9 @@ public class Main {
 			d = getMaxMin(lstD, 's');
 			lastS = getPrev(d.getValue().getLstSpkr(), null);
 			lastS.setNext(bestS);
-			getPrev(p, lastS).setNext(null);
+			getPrev(p, bestS).setNext(null);
 
+			// best is p now (has lowest rating)
 			d = getMaxMin(lstD, 'b');
 			lastS = getPrev(d.getValue().getLstSpkr(), null);
 			lastS.setNext(p);
