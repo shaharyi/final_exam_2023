@@ -6,8 +6,8 @@ public class Main1 {
 	 */
 	public static boolean isOrderlyContained(char[] a, char[] b) {
 		int i = 0;
-		for (int j = 0; j < b.length; j++)
-			if (i < a.length && a[i] == b[j])
+		for (int j = 0; j < b.length && i < a.length; j++)
+			if (a[i] == b[j])
 				i++;
 
 		return (i == a.length);
