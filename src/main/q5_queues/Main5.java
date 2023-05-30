@@ -1,5 +1,6 @@
 
 public class Main5 {
+	
 	  public static Queue<Integer> getCopy(Queue<Integer> q){
 		    Queue<Integer> retQ = new Queue <Integer>();
 		    Queue<Integer> backup = new Queue <Integer>();
