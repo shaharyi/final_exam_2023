@@ -5,10 +5,12 @@ public class Main1 {
 	 * Return "Is a contained in b in order?"
 	 */
 	public static boolean isOrderlyContained(char[] a, char[] b) {
-		int i = 0;
-		for (int j = 0; j < b.length && i < a.length; j++)
+		int i = 0, j = 0;
+		while (j < b.length && i < a.length) {
 			if (a[i] == b[j])
 				i++;
+			j++;
+		}
 
 		return (i == a.length);
 	}
