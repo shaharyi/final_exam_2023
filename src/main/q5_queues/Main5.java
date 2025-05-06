@@ -14,10 +14,10 @@ public class Main5 {
 		  }
 
 	/*
-	 * Complexity: O(n) where n is the size of q1.
-	 * Note q1, q2 are equal in length.
-	 * Because we scan q1 and q2 only once, and O(2n) = O(n).
-	 * We visit every cell of the input just once.
+	 * Complexity: O(n) where n is the size of q1 (same size as q2).
+	 * Because we scan q1 and q2 only once.
+	 * (We visit every cell of the input just once.)
+         * Then we scan in the worst case all the 2n cells, O(2n) + O(2n) = O(n).
 	 */
 	public static boolean ex5A(Queue<Integer> q1, Queue<Integer> q2, int n) {
 		
