@@ -28,6 +28,8 @@ public class Main5 {
 		while (!q1c.isEmpty()) {
 			for (int i = 0; i < n; i++) {
 				q.insert(q1c.remove());
+			}
+			for (int i = 0; i < n; i++) {
 				q.insert(q2c.remove());
 			}
 		}
